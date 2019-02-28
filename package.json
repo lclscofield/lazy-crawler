@@ -1,0 +1,26 @@
+{
+  "name": "common-crawler",
+  "version": "0.1.0",
+  "description": "common crawler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lclscofield/common-crawler.git"
+  },
+  "keywords": [
+    "crawler",
+    "node"
+  ],
+  "author": "lclscofield",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lclscofield/common-crawler/issues"
+  },
+  "homepage": "https://github.com/lclscofield/common-crawler#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2"
+  }
+}
