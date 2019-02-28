@@ -1,0 +1,504 @@
+[
+  [
+    {
+      "ip": "59.62.164.213:9999",
+      "location": "江西宜春",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "123.133.41.104:53281",
+      "location": "山东潍坊",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "112.85.168.22:9999",
+      "location": "江苏南通",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "112.87.68.39:9999",
+      "location": "江苏宿迁",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "121.31.103.104:8123",
+      "location": "广西防城港",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "59.62.164.163:9999",
+      "location": "江西宜春",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "116.209.55.210:9999",
+      "location": "湖北仙桃",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "116.209.55.41:9999",
+      "location": "湖北仙桃",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "122.193.246.202:9999",
+      "location": "江苏南通",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "125.123.142.56:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "125.123.136.89:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "123.146.233.93:53281",
+      "location": "重庆",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "115.239.25.184:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "112.87.70.43:9999",
+      "location": "江苏宿迁",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "113.122.170.23:9999",
+      "location": "山东日照",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "112.85.169.158:9999",
+      "location": "江苏南通",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "121.31.141.220:8123",
+      "location": "广西北海",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "115.151.2.200:9999",
+      "location": "江西宜春",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "112.85.168.28:9999",
+      "location": "江苏南通",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "125.123.141.39:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "182.88.91.98:8123",
+      "location": "广西南宁",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "125.123.142.75:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "113.122.169.206:9999",
+      "location": "山东日照",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "183.185.27.177:80",
+      "location": "山西太原",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "112.85.171.39:9999",
+      "location": "江苏南通",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "58.48.168.166:51430",
+      "location": "湖北武汉",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "112.87.68.57:9999",
+      "location": "江苏宿迁",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "112.85.166.118:9999",
+      "location": "江苏南通",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "112.85.167.158:9999",
+      "location": "江苏南通",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "125.123.138.90:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "125.123.136.254:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "115.239.24.119:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "180.118.77.9:9999",
+      "location": "江苏镇江",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "116.209.53.238:9999",
+      "location": "湖北仙桃",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "182.46.218.126:8118",
+      "location": "山东济南",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "112.87.70.177:9999",
+      "location": "江苏宿迁",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "112.85.164.140:9999",
+      "location": "江苏南通",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "111.79.199.181:9999",
+      "location": "江西赣州",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "112.85.171.133:9999",
+      "location": "江苏南通",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "116.209.52.52:9999",
+      "location": "湖北仙桃",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "125.123.140.49:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "49.86.176.92:9999",
+      "location": "江苏",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "116.209.52.33:9999",
+      "location": "湖北仙桃",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "118.89.246.49:8118",
+      "location": "",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "125.123.137.173:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "116.209.55.240:9999",
+      "location": "湖北仙桃",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "218.17.139.5:808",
+      "location": "广东深圳",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "125.123.142.163:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "49.70.94.134:9999",
+      "location": "江苏苏州",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "116.209.58.78:9999",
+      "location": "湖北仙桃",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "116.209.52.253:9999",
+      "location": "湖北仙桃",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "113.121.146.210:9999",
+      "location": "山东",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "60.216.101.46:59351",
+      "location": "山东济南",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "116.209.54.9:9999",
+      "location": "湖北仙桃",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "116.209.53.240:9999",
+      "location": "湖北仙桃",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "116.209.59.222:9999",
+      "location": "湖北仙桃",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "114.230.69.57:9999",
+      "location": "江苏扬州",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "125.123.141.26:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "59.62.165.146:9999",
+      "location": "江西宜春",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "125.123.140.125:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "49.70.33.124:9999",
+      "location": "江苏苏州",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "115.239.25.8:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "115.151.3.111:9999",
+      "location": "江西宜春",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "115.239.25.133:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "112.85.165.222:9999",
+      "location": "江苏南通",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "183.157.140.78:8118",
+      "location": "浙江杭州",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "27.154.34.146:31527",
+      "location": "福建厦门",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "111.176.31.108:9999",
+      "location": "湖北荆州",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "125.123.137.66:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "125.40.238.181:56948",
+      "location": "河南洛阳",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "125.123.141.247:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "123.232.200.241:8118",
+      "location": "山东济南",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "117.82.222.130:8118",
+      "location": "江苏苏州",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "125.123.141.225:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "112.85.170.81:9999",
+      "location": "江苏南通",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "180.119.141.78:9999",
+      "location": "江苏扬州",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "180.119.141.113:9999",
+      "location": "江苏扬州",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "58.210.133.98:32741",
+      "location": "江苏苏州",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "183.15.121.51:3128",
+      "location": "广东深圳",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "125.121.139.228:808",
+      "location": "浙江杭州",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "59.62.165.155:9999",
+      "location": "江西宜春",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "115.239.25.250:9999",
+      "location": "浙江嘉兴",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "116.209.55.79:9999",
+      "location": "湖北仙桃",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "59.62.166.219:9999",
+      "location": "江西宜春",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "175.165.128.140:1133",
+      "location": "辽宁葫芦岛",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "116.209.56.91:9999",
+      "location": "湖北仙桃",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "219.238.186.188:8118",
+      "location": "北京",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "116.209.59.190:9999",
+      "location": "湖北仙桃",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "112.85.151.165:9999",
+      "location": "江苏南通",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "116.209.59.81:9999",
+      "location": "湖北仙桃",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "49.86.179.32:9999",
+      "location": "江苏",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "115.151.1.211:9999",
+      "location": "江西宜春",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "116.209.59.14:9999",
+      "location": "湖北仙桃",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "112.85.171.103:9999",
+      "location": "江苏南通",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "116.209.57.194:9999",
+      "location": "湖北仙桃",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "113.121.144.151:9999",
+      "location": "山东",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "59.62.164.223:808",
+      "location": "江西宜春",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "59.62.166.152:9999",
+      "location": "江西宜春",
+      "protocol": "HTTPS"
+    },
+    {
+      "ip": "122.115.78.240:38157",
+      "location": "河南郑州",
+      "protocol": "HTTP"
+    },
+    {
+      "ip": "115.151.1.39:808",
+      "location": "江西宜春",
+      "protocol": "HTTPS"
+    }
+  ]
+]
