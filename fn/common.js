@@ -10,7 +10,7 @@ const defaultOptions = {
   }
 }
 
-async function getHtml(options) {
+async function getHtml (options) {
   return new Promise((resolve, reject) => {
     request.get({
       ...defaultOptions,
@@ -20,13 +20,13 @@ async function getHtml(options) {
       if (res.statusCode < 400) {
         resolve(cheerio.load(body, { decodeEntities: false }))
       } else {
-        throw new Error(err)
+        throw new Error('请求错误')
       }
     })
   })
 }
 
-async function saveIps(ips) {
+async function saveIps (ips) {
   return new Promise((resolve, reject) => {
     fs.writeFile(path.join(__dirname + '/../data/ips.json'), JSON.stringify(ips, null, 2), err => {
       if (err) throw new Error(err)

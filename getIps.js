@@ -1,7 +1,7 @@
 const { getHtml, saveIps } = require('./fn/common.js')
 const ipsFn = require('./target/testIps.js')
 
-async function getIps(ipsFn) {
+async function getIps (ipsFn) {
   if (!ipsFn || !ipsFn.length) {
     console.log('请先写入获取 ip 的规则')
     return

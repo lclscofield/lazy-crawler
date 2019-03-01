@@ -22,6 +22,7 @@
   "homepage": "https://github.com/lclscofield/common-crawler#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
+    "lodash": "^4.17.11",
     "request": "^2.88.0"
   }
 }

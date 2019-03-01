@@ -1,5 +1,1 @@
-
-async function main() {
-}
-
-main()
+module.exports = require('./lib/crawler.js')
