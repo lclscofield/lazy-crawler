@@ -1,4 +1,4 @@
-# simple-crawler
+# lazy-crawler
 
 ## 使用
 

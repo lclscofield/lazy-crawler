@@ -1,14 +1,14 @@
 {
-  "name": "simple-crawler",
+  "name": "lazy-crawler",
   "version": "0.2.0",
-  "description": "simple crawler",
+  "description": "lazy crawler",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/lclscofield/simple-crawler.git"
+    "url": "git+ssh://git@github.com/lclscofield/lazy-crawler.git"
   },
   "keywords": [
     "crawler",
@@ -20,9 +20,9 @@
   "author": "lclscofield",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lclscofield/simple-crawler/issues"
+    "url": "https://github.com/lclscofield/lazy-crawler/issues"
   },
-  "homepage": "https://github.com/lclscofield/simple-crawler#readme",
+  "homepage": "https://github.com/lclscofield/lazy-crawler#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "lodash": "^4.17.11",
