@@ -12,7 +12,7 @@ const defaultOptions = {
 
 async function getHtml (options) {
   return new Promise((resolve, reject) => {
-    request.get({
+    request({
       ...defaultOptions,
       ...options
     }, (err, res, body) => {

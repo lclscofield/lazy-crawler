@@ -1,11 +1,6 @@
-const { getHtml, saveIps } = require('./fn/common.js')
-const ipsFn = require('./target/testIps.js')
+const { getHtml, saveIps } = require('./common.js')
 
 async function getIps (ipsFn) {
-  if (!ipsFn || !ipsFn.length) {
-    console.log('请先写入获取 ip 的规则')
-    return
-  }
   let ips = []
   const startTime = new Date()
   for (let i = 0, len = ipsFn.length; i < len; i++) {
@@ -14,11 +9,11 @@ async function getIps (ipsFn) {
       const $ = await getHtml({
         url: ipFn.url
       })
-      ips.push(await ipFn.callback($))
+      ips = ips.concat(await ipFn.callback($))
     }
   }
   await saveIps(ips)
   console.log(`获取并存入 ip 池共耗时 ${new Date() - startTime} ms`)
 }
 
-getIps(ipsFn)
+module.exports = getIps
