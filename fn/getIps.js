@@ -1,6 +1,6 @@
 const { getHtml, saveIps } = require('./common.js')
 
-async function getIps (ipsFn) {
+async function getIps (ipsFn, path) {
   let ips = []
   const startTime = new Date()
   for (let i = 0, len = ipsFn.length; i < len; i++) {
@@ -12,7 +12,7 @@ async function getIps (ipsFn) {
       ips = ips.concat(await ipFn.callback($))
     }
   }
-  await saveIps(ips)
+  await saveIps(ips, path)
   console.log(`获取并存入 ip 池共耗时 ${new Date() - startTime} ms`)
 }
 

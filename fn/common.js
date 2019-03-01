@@ -26,9 +26,9 @@ async function getHtml (options) {
   })
 }
 
-async function saveIps (ips) {
+async function saveIps (ips, ipsPath) {
   return new Promise((resolve, reject) => {
-    fs.writeFile(path.join(__dirname + '/../data/ips.json'), JSON.stringify(ips, null, 2), err => {
+    fs.writeFile(path.join(ipsPath + './ips.json'), JSON.stringify(ips, null, 2), err => {
       if (err) throw new Error(err)
       console.log('ip 池文件已保存')
       resolve()

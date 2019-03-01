@@ -1,7 +1,14 @@
+/*
+callback 参数接收的是 cheerio 解析出的类似 jq 的实例，像使用 jq 一样使用它吧
+callback 返回值是一个数组，数组元素是对象，必须包括 ip 属性
+{
+  ip: 'xxx.xxx.xxx.xxx'
+}
+*/
 module.exports = [
   {
-    url: 'https://www.xicidaili.com/nn/',
-    callback: ($) => {
+    url: 'https://www.xicidaili.com/nn/',  // 获取 ip 的地址
+    callback: ($) => {  // 处理页面获取 ip 并返回 ip 数组
       let ips = []
       $('#ip_list tr').each((index, e) => {
         if (index === 0) return
