@@ -10,6 +10,8 @@ async function getIps (ipsFn, path) {
         url: ipFn.url
       })
       ips = ips.concat(await ipFn.callback($))
+    } else {
+      throw new Error('缺少 url 或 callback')
     }
   }
   await saveIps(ips, path)
