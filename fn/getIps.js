@@ -1,6 +1,6 @@
 const { getHtml, saveIps } = require('./common.js')
 
-async function getIps (ipsFn, path) {
+async function getIps(ipsFn, path) {
   let ips = []
   const startTime = new Date()
   for (let i = 0, len = ipsFn.length; i < len; i++) {
@@ -11,7 +11,7 @@ async function getIps (ipsFn, path) {
       })
       ips = ips.concat(await ipFn.callback($))
     } else {
-      throw new Error('缺少 url 或 callback')
+      console.log('缺少 url 或 callback', JSON.stringify(ipFn))
     }
   }
   await saveIps(ips, path)

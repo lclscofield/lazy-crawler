@@ -12,7 +12,7 @@
 
 ### 获取 ip 池
 
-在爬取目标之前，需要先获取 ip 池。获取可以见例子 [**testIps.js**](target/testIps.js)。只需要写入 url 和 callback 函数，callback 就是爬取的规则。获取后会输出 [**ips.json**](data/ips.json)（此文件路径可选）。
+在爬取目标之前，需要先获取 ip 池。获取可以见例子 [**testIps.js**](test/testIps.js)。只需要写入 url 和 callback 函数，callback 就是爬取的规则。获取后会输出 [**ips.json**](data/ips.json)（此文件路径可选）。
 
 ## API 及配置
 
@@ -135,7 +135,7 @@ let ipsFn = [
   }
 ]
 // 添加获取 ip 的规则进入队列，获取 ip 的请求不受自定义的全局控制器配置（如 timeout）影响。
-crawler.queueIps(ipsFn, './')
+crawler.queueIps(ipsFn, path.join(__dirname, './data'))
 
 crawler.start()  // 开始运行
 ```
