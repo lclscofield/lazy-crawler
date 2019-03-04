@@ -1,4 +1,5 @@
 const { getHtml, saveIps } = require('./common.js')
+const _ = require('lodash')
 
 async function getIps(ipsFn, path) {
   let ips = []
@@ -6,10 +7,16 @@ async function getIps(ipsFn, path) {
   for (let i = 0, len = ipsFn.length; i < len; i++) {
     let ipFn = ipsFn[i]
     if (ipFn.url && ipFn.callback) {
-      const $ = await getHtml({
-        url: ipFn.url
-      })
-      ips = ips.concat(await ipFn.callback($))
+      try {
+        const $ = await getHtml({
+          url: ipFn.url
+        })
+        ips = ips.concat(
+          _.isArray(await ipFn.callback($)) ? await ipFn.callback($) : []
+        )
+      } catch (err) {
+        console.log(err)
+      }
     } else {
       console.log('缺少 url 或 callback', JSON.stringify(ipFn))
     }

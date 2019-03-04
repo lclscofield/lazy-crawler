@@ -8,7 +8,6 @@ callback 返回值是一个数组，数组元素是对象，必须包括 ip 属�
 module.exports = [
   {
     url: 'https://www.xicidaili.com/nn/', // 获取 ip 的地址
-
     // 处理页面获取 ip 并返回 ip 数组
     callback: $ => {
       let ips = []

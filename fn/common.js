@@ -19,10 +19,10 @@ async function getHtml(options, proxy) {
       },
       (err, res, body) => {
         if (err) throw new Error(err)
-        if (res.statusCode < 400) {
+        if (res.statusCode === 200) {
           resolve(cheerio.load(body, { decodeEntities: false }))
         } else {
-          throw new Error('请求错误')
+          reject()
         }
       }
     )
