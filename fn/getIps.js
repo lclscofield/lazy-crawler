@@ -1,9 +1,8 @@
-const { getHtml, saveIps } = require('./common.js')
+const { getHtml, saveIps, check } = require('./common.js')
 const _ = require('lodash')
 
-async function getIps (ipsFn, path) {
+async function getIp (ipsFn) {
   let ips = []
-  const startTime = new Date()
   for (let i = 0, len = ipsFn.length; i < len; i++) {
     let ipFn = ipsFn[i]
     if (ipFn.url && ipFn.callback) {
@@ -11,7 +10,7 @@ async function getIps (ipsFn, path) {
         const $ = await getHtml({
           url: ipFn.url
         })
-        ips = ips.concat(_.isArray(await ipFn.callback($)) ? await ipFn.callback($) : [])
+        ips = ips.concat(_.isArray(ipFn.callback($)) ? ipFn.callback($) : [])
       } catch (err) {
         console.log(err)
       }
@@ -19,8 +18,18 @@ async function getIps (ipsFn, path) {
       console.log('缺少 url 或 callback', JSON.stringify(ipFn))
     }
   }
+  return ips
+}
+
+async function getIps (ipsFn, path) {
+  const startTime = new Date()
+  let ips = await getIp(ipsFn)
+  ips = await check(ips) // 验证代理可用性
   await saveIps(ips, path)
-  console.log(`获取并存入 ip 池共耗时 ${new Date() - startTime} ms`)
+  console.log(
+    `获取、验证并存入 ip 池共耗时 ${new Date() - startTime} ms` + '\n------'
+  )
+  return ips
 }
 
 module.exports = getIps
