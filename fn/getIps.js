@@ -1,7 +1,7 @@
 const { getHtml, saveIps } = require('./common.js')
 const _ = require('lodash')
 
-async function getIps(ipsFn, path) {
+async function getIps (ipsFn, path) {
   let ips = []
   const startTime = new Date()
   for (let i = 0, len = ipsFn.length; i < len; i++) {
@@ -11,9 +11,7 @@ async function getIps(ipsFn, path) {
         const $ = await getHtml({
           url: ipFn.url
         })
-        ips = ips.concat(
-          _.isArray(await ipFn.callback($)) ? await ipFn.callback($) : []
-        )
+        ips = ips.concat(_.isArray(await ipFn.callback($)) ? await ipFn.callback($) : [])
       } catch (err) {
         console.log(err)
       }

@@ -10,7 +10,7 @@ const defaultOptions = {
   }
 }
 
-async function getHtml(options, proxy) {
+async function getHtml (options, proxy) {
   return new Promise((resolve, reject) => {
     request(
       {
@@ -22,14 +22,14 @@ async function getHtml(options, proxy) {
         if (res.statusCode === 200) {
           resolve(cheerio.load(body, { decodeEntities: false }))
         } else {
-          reject()
+          reject(res)
         }
       }
     )
   })
 }
 
-async function saveIps(ips, ipsPath) {
+async function saveIps (ips, ipsPath) {
   return new Promise((resolve, reject) => {
     fs.writeFile(
       path.join(ipsPath, 'ips.json'),

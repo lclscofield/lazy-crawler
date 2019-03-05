@@ -34,9 +34,13 @@ module.exports = [
                   .trim()
                 break
               case idx === 5:
-                ipObj.protocol = $(event)
-                  .text()
-                  .trim()
+                ipObj.ip =
+                  $(event)
+                    .text()
+                    .trim()
+                    .toLowerCase() +
+                  '://' +
+                  ipObj.ip
                 break
             }
           })
