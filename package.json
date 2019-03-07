@@ -24,7 +24,9 @@
   },
   "homepage": "https://github.com/lclscofield/lazy-crawler#readme",
   "dependencies": {
+    "charset-parser": "^0.2.0",
     "cheerio": "^1.0.0-rc.2",
+    "iconv-lite": "^0.4.24",
     "lodash": "^4.17.11",
     "request": "^2.88.0"
   },

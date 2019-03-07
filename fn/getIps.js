@@ -26,9 +26,7 @@ async function getIps (ipsFn, path) {
   let ips = await getIp(ipsFn)
   ips = await check(ips) // 验证代理可用性
   await saveIps(ips, path)
-  console.log(
-    `获取、验证并存入 ip 池共耗时 ${new Date() - startTime} ms` + '\n------'
-  )
+  console.log(`获取、验证并存入 ip 池共耗时 ${new Date() - startTime} ms` + '\n------')
   return ips
 }
 

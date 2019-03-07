@@ -1,5 +1,7 @@
 const request = require('request')
 const cheerio = require('cheerio')
+const charsetParser = require('charset-parser')
+const iconv = require('iconv-lite')
 const fs = require('fs')
 const path = require('path')
 const getUserAgent = require('./userAgents.js')
@@ -10,17 +12,20 @@ const defaultOptions = {
   }
 }
 
-async function getHtml (options, proxy) {
+async function getHtml (options) {
   return new Promise((resolve, reject) => {
     request(
       {
         ...defaultOptions,
         ...options,
-        proxy
+        encoding: null
       },
       (err, res, body) => {
         if (!err && res.statusCode === 200) {
-          resolve(cheerio.load(body, { decodeEntities: false }))
+          const charset = charsetParser(res.headers['content-type'], body.toString(), 'utf-8')
+          const html = iconv.decode(body, charset)
+          const $ = cheerio.load(html, { decodeEntities: false })
+          resolve($)
         } else {
           reject(err || '请求错误')
         }
@@ -31,21 +36,17 @@ async function getHtml (options, proxy) {
 
 async function saveIps (ips, ipsPath) {
   return new Promise((resolve, reject) => {
-    fs.writeFile(
-      path.join(ipsPath, 'ips.json'),
-      JSON.stringify(ips, null, 2),
-      err => {
-        if (err) console.log(err)
-        console.log('ip 池文件已保存')
-        resolve()
-      }
-    )
+    fs.writeFile(path.join(ipsPath, 'ips.json'), JSON.stringify(ips, null, 2), err => {
+      if (err) console.log(err)
+      console.log('ip 池文件已保存')
+      resolve()
+    })
   })
 }
 
 // 验证代理可用性
 async function check (ips) {
-  console.log('获取页面 ip 数量：' + ips.length)
+  console.log('总 ip 数量：' + ips.length)
   console.log('开始验证 ip')
   try {
     let valid = [] // 有效数据
