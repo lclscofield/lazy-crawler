@@ -7,51 +7,45 @@ callback 返回值是一个数组，数组元素是对象，必须包括 ip 属�
 */
 function callback ($) {
   let ips = []
-  $('#ip_list tr').each((index, e) => {
-    if (index === 0) return
+  $('.table tbody tr').each((index, e) => {
     let ipObj = {}
     $(e)
       .children('td')
       .each((idx, event) => {
         switch (true) {
-          case idx === 1:
+          case idx === 0:
             ipObj.ip = $(event)
               .text()
               .trim()
             break
-          case idx === 2:
-            ipObj.ip = `${ipObj.ip}:${$(event)
-              .text()
-              .trim()}`
-            break
-          case idx === 3:
+          case idx === 4:
             ipObj.location = $(event)
               .text()
               .trim()
             break
-          case idx === 5:
-            ipObj.ip =
-              $(event)
-                .text()
-                .trim()
-                .toLowerCase() +
-              '://' +
-              ipObj.ip
+          case idx === 3:
+            ipObj.ip = `${$(event)
+              .text()
+              .trim()
+              .toLowerCase()}://${ipObj.ip}`
             break
+          case idx === 1:
+            ipObj.ip = `${ipObj.ip}:${$(event)
+              .text()
+              .trim()}`
         }
       })
     ips.push(ipObj)
   })
   return ips
 }
-module.exports = [
-  {
-    url: 'https://www.xicidaili.com/nn/', // 获取 ip 的地址
-    // 处理页面获取 ip 并返回 ip 数组
+
+let ipsFn = []
+for (let i = 1; i <= 1000; i++) {
+  ipsFn.push({
+    url: `https://www.kuaidaili.com/free/inha/${i}/`,
     callback
-  },
-  {
-    url: 'https://www.xicidaili.com/nt/',
-    callback
-  }
-]
+  })
+}
+
+module.exports = ipsFn
